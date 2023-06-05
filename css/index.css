@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cart_btn {
+  padding: 10px; 
+  background-color: pink; 
+  border-radius: 50%;
+}
+
+#cart_btn:hover {
+  background-color: aqua;
+}
