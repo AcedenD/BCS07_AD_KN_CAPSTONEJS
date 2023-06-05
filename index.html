@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,6 +14,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./css/index.css">
 
@@ -55,22 +61,32 @@
   </header>
   <main>
 
+
+
+    <!-- products -->
     <div class="container">
-      <div class="products d-flex">
-        <div class="row justify-content-center align-items-center g-5" id="products_display">
+      <div class="products">
+        <div class="products_title">
+          <h2>Products</h2>
+        </div>
+        <div class="products_content">
+          <div class="row justify-content-center align-items-center g-4" id="products_display">
 
-          <div class="col-lg-4 d-flex justify-content-center">
-            <div class="card">
-              <a href="https://www.google.com"><img src="./img/test.png" class="card-img-top" alt="test"></a>
+            <div class="col-lg-4 d-flex justify-content-center">
+              <div class="card">
+                <a href="" onclick="(function() {
+                  alert('hello') })()"><img src="./img/test.png" class="card-img-top" alt="test"></a>
 
-              <div class="card-body text-center">
-                <h5 class="card-title">Test name</h5>
-                <p class="card-text">test desc</p>
-                <i class="fa fa-cart-shopping" id="cart_btn"></i>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Test name</h5>
+                  <p class="card-text">test desc</p>
+                  <i class="fa fa-cart-shopping" id="cart_btn"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -94,7 +110,7 @@
 
 
 
-  <script src="./index.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
