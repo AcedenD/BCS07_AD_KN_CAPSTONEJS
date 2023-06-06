@@ -8,11 +8,98 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+hr {
+  border: 2px solid #272727;
+  width: 80vw;
+  margin: 40px auto;
+  border-radius: 40%;
+}
 
+/* carousel css*/
+.cyber_carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  /* background-color: #e2464675; */
+}
+
+.cyber_carousel .carousel-inner{
+  height: 50vh;
+}
+
+.cyber_carousel .carousel-item{
+  height: 100%;
+  border: 2px solid green;
+
+}
+
+
+.cyber_carousel .carousel-indicators button{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2727275d;
+  margin: 0px 5px;
+}
+
+.cyber_carousel .carousel-indicators button:hover{
+  background-color: #E24647;
+}
+
+.cyber_carousel .carousel-indicators button.active{
+  background-color: #E24647;
+}
+
+
+.cyber_carousel .carousel-control-next, .carousel-control-prev{
+  /* background-color: #E24647; */
+  width: 5%;
+}
+
+.cyber_carousel .carousel-control-next span, .carousel-control-prev span{
+  color: #E24647;
+  font-size: 30px;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+
+
+
+
+
+.cyber_carousel .carousel-item .carousel-item-left{
+  display: flex;
+  width: 50%;
+  /* height: 100%; */
+  justify-content: end;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.cyber_carousel .carousel-item .carousel-item-right{
+  display: flex;
+  width: 50%;
+  /* height: 100%; */
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.cyber_carousel .carousel-item h1{
+  font-size: 200px;
+}
+  
+
+
+ /* products css */
 
 .products_title h2 {
   text-align: center;
   margin: 20px 0;
+  font-size: 40px;
+  font-weight: 200;
+  color: #272727;
+  text-transform: uppercase;
 }
 
 img {
@@ -45,7 +132,7 @@ h3.card-text {
 }
 
 #cart_btn {
-  padding: 20px; 
+  padding: 18px; 
   background-color: #00bcd4; 
   border-radius: 50%;
   font-size: 20px;
@@ -56,3 +143,25 @@ h3.card-text {
 #cart_btn:hover {
   background-color: #E24647;
 }
+
+@media screen and (max-width: 576px) {
+  h5.card-title {
+    font-size: 16px;
+  }
+
+  p.card-text {
+    font-size: 14px;
+  }
+  
+  h3.card-text {
+    font-size: 14px;
+  }
+
+  #cart_btn {
+    padding: 10px; 
+    font-size: 14px;
+  }
+}
+
+
+  

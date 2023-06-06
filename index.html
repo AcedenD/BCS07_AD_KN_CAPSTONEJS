@@ -31,7 +31,7 @@
   <header>
     <!-- place navbar here -->
     <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 ">
         <div class="container-fluid d-flex">
           <a class="navbar-brand col-lg-2 col-md-6 col-sm-12 col-12 d-flex justify-content-center" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -69,59 +69,51 @@
   </header>
   <main>
     <section class="cyber_carousel">
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs="carousel">
         <div class="carousel-indicators mb-4">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="" class="d-block w-100" alt="1">
-            <div class="carousel_content">
-              <img class="animate__animated animate__fadeInUp" src="" alt="1">
-              <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.
-              </h2>
-              <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies
-                to grow.</p>
+            <div class="carousel-content d-flex w-100">
+              <div class="carousel-item-left">
+                <h1>L1</h1>
+              </div>
+              <div class="carousel-item-right">
+                <h1>R1</h1>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="" class="d-block w-100" alt="2">
-            <div class="carousel_content">
-              <img class="animate__animated animate__fadeInUp" src="" alt="2">
-              <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.
-              </h2>
-              <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies
-                to grow.</p>
+            <div class="carousel-content d-flex w-100">
+              <div class="carousel-item-left">
+                <h1>L2</h1>
+              </div>
+              <div class="carousel-item-right">
+                <h1>R2</h1>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./img/mountains-1.jpg" class="d-block w-100" alt="3">
-            <div class="carousel_content">
-              <img class="animate__animated animate__fadeInUp" src="./img/03-3.jpg" alt="3">
-              <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.
-              </h2>
-              <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies
-                to grow.</p>
-            </div>
-          </div>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="fa fa-arrow-left" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="fa fa-arrow-right" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </section>
+    <hr>
+
 
 
 
@@ -129,7 +121,7 @@
     <div class="container">
       <div class="products">
         <div class="products_title">
-          <h2>Products</h2>
+          <h2>Our Products</h2>
         </div>
         <div class="products_content">
           <div class="row justify-content-center align-items-center g-4" id="products_display">
@@ -140,6 +132,8 @@
                   alert('hello') })()"><img src="./img/test.png" class="card-img-top" alt="test"></a>
 
                 <div class="card-body text-center">
+                  <a onclick="(function() {
+                    alert('id: ${shoesArr[i].id}') })()"></a>
                   <h5 class="card-title">Test name</h5>
                   <p class="card-text">test desc</p>
                   <i class="fa fa-cart-shopping" id="cart_btn"></i>
@@ -151,6 +145,7 @@
 
       </div>
     </div>
+    <hr>
 
 
   </main>
