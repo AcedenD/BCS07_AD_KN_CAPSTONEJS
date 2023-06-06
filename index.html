@@ -32,17 +32,17 @@
     <!-- place navbar here -->
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-        <div class="container-fluid d-flex justify-content-evenly">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <i class="fa-brands fa-facebook d-flex justify-content-center" style="flex-grow: 1;"></i>
+        <div class="container-fluid d-flex">
+          <a class="navbar-brand col-lg-2 col-md-6 col-sm-12 col-12 d-flex justify-content-center" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse justify-content-end col-lg-8 col-md-6 col-sm-6 col-xs-6"
+            id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Product</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
@@ -52,6 +52,14 @@
               </li>
             </ul>
           </div>
+          <div class="nav_right d-flex gap-1 col-lg-2 col-md-6 col-sm-6 col-xs-6 justify-content-end">
+            <div id="cart_block">
+              <a href=""><i class="fa fa-cart-shopping text-black"></i></a>
+            </div>
+            <div class="user_block">
+              <a href=""><i class="fa fa-user text-black"></i></a>
+            </div>
+          </div>
 
         </div>
       </nav>
@@ -60,6 +68,60 @@
 
   </header>
   <main>
+    <section class="cyber_carousel">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators mb-4">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="" class="d-block w-100" alt="1">
+            <div class="carousel_content">
+              <img class="animate__animated animate__fadeInUp" src="" alt="1">
+              <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.
+              </h2>
+              <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies
+                to grow.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="" class="d-block w-100" alt="2">
+            <div class="carousel_content">
+              <img class="animate__animated animate__fadeInUp" src="" alt="2">
+              <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.
+              </h2>
+              <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies
+                to grow.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/mountains-1.jpg" class="d-block w-100" alt="3">
+            <div class="carousel_content">
+              <img class="animate__animated animate__fadeInUp" src="./img/03-3.jpg" alt="3">
+              <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.
+              </h2>
+              <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies
+                to grow.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
 
 
