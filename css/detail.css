@@ -1,0 +1,17 @@
+.carousel {
+  width: 50%;
+  margin: 0px auto;
+}
+.slick-slide {
+  margin: 10px;
+}
+.slick-slide img {
+  width: 100%;
+  border: 2px solid #fff;
+}
+.slick-arrow {
+  background-color: #f3a4a4;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
