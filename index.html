@@ -30,40 +30,43 @@
 <body>
   <header>
     <!-- place navbar here -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 ">
-        <div class="container-fluid d-flex">
-          <a class="navbar-brand col-lg-2 col-md-6 col-sm-12 col-12 d-flex justify-content-center" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end col-lg-8 col-md-6 col-sm-6 col-xs-6"
-            id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav_right d-flex gap-1 col-lg-2 col-md-6 col-sm-6 col-xs-6 justify-content-end">
-            <div id="cart_block">
-              <a href=""><i class="fa fa-cart-shopping text-black"></i></a>
+    <section class="nav_sec py-lg-2 py-md-1">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 ">
+          <div class="container-fluid d-flex">
+            <a class="navbar-brand col-lg-2 col-md-12 col-sm-12 col-12 d-flex justify-content-center"
+              href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end col-lg-8 col-md-6 col-sm-6 col-xs-6"
+              id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              </ul>
             </div>
-            <div class="user_block">
-              <a href=""><i class="fa fa-user text-black"></i></a>
+            <div class="nav_right d-flex gap-1 col-lg-2 col-md-6 col-sm-6 col-xs-6 justify-content-center ">
+              <div id="cart_block">
+                <a href=""><i class="fa fa-cart-shopping"></i></a>
+              </div>
+              <div class="user_block">
+                <a href=""><i class="fa fa-user"></i></a>
+              </div>
             </div>
-          </div>
 
-        </div>
-      </nav>
-    </div>
+          </div>
+        </nav>
+      </div>
+    </section>
 
 
   </header>
@@ -118,39 +121,85 @@
 
 
     <!-- products -->
-    <div class="container">
-      <div class="products">
-        <div class="products_title">
-          <h2>Our Products</h2>
-        </div>
-        <div class="products_content">
-          <div class="row justify-content-center align-items-center g-4" id="products_display">
+    <section class="products_list">
+      <div class="container">
+        <div class="products">
+          <div class="products_title">
+            <h2>Our Products</h2>
+          </div>
+          <div class="products_content">
+            <div class="row justify-content-center align-items-center g-4" id="products_display">
 
-            <div class="col-lg-4 d-flex justify-content-center">
-              <div class="card">
-                <a href="" onclick="(function() {
-                  alert('hello') })()"><img src="./img/test.png" class="card-img-top" alt="test"></a>
-
-                <div class="card-body text-center">
-                  <a onclick="(function() {
-                    alert('id: ${shoesArr[i].id}') })()"></a>
-                  <h5 class="card-title">Test name</h5>
-                  <p class="card-text">test desc</p>
-                  <i class="fa fa-cart-shopping" id="cart_btn"></i>
+              <div class="col-lg-4 col-md-6 col-6 d-flex justify-content-center">
+                <div class="card">
+                  <a><img src="https://shop.cyberlearn.vn/images/adidas-prophere.png" class="card-img-top"
+                      alt="test"></a>
+                  <div class="card-body text-center">
+                    <a>
+                      <h5 class="card-title"></h5>
+                    </a>
+                    <p class="card-text"></p>
+                    <h3 class="card-text"></h3>
+                    <i class="fa fa-cart-shopping" id="cart_btn"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-6 d-flex justify-content-center">
+                <div class="card">
+                  <a><img src="https://shop.cyberlearn.vn/images/adidas-prophere-black-white.png" class="card-img-top"
+                      alt="test"></a>
+                  <div class="card-body text-center">
+                    <a>
+                      <h5 class="card-title"></h5>
+                    </a>
+                    <p class="card-text"></p>
+                    <h3 class="card-text"></h3>
+                    <i class="fa fa-cart-shopping" id="cart_btn"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-6 d-flex justify-content-center">
+                <div class="card">
+                  <a><img src="https://shop.cyberlearn.vn/images/adidas-prophere-customize.png" class="card-img-top"
+                      alt="test"></a>
+                  <div class="card-body text-center">
+                    <a>
+                      <h5 class="card-title"></h5>
+                    </a>
+                    <p class="card-text"></p>
+                    <h3 class="card-text"></h3>
+                    <i class="fa fa-cart-shopping" id="cart_btn"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
-    </div>
+    </section>
     <hr>
 
 
   </main>
-  <footer>
+  <footer class="py-lg-5 py-md-2 py-1">
     <!-- place footer here -->
+    <div class="container-lg text-white text-center">
+      <div class="footer_social py-4">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <hr>
+      <div class="footer_copy">
+        <p>© 2023 CyberShoes. All rights reserved | Designed by <a
+            href="https://cybersoft.edu.vn/bootcamp-lap-trinh-front-end-tu-zero-co-viec-lam/" target="
+                        ">Cybersoft</a>
+        </p>
+      </div>
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
