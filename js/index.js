@@ -11,7 +11,7 @@ function getAllShoes() {
 
   promise.then(function(res) {
     let shoesArr = res.data.content
-    console.log(shoesArr);
+    // console.log(shoesArr);
     renderShoes(shoesArr)
   })
 
@@ -24,7 +24,7 @@ getAllShoes();
 
 function renderShoes(shoesArr) {
   var content = "";
-  for(let i = 0; i < shoesArr.length; i++){
+  for(let i = 0; i < 6; i++){
     console.log(shoesArr[i]);
     // <img src="${shoesArr[i].image}" class="card-img-top" alt="test"></img>
     content += `
