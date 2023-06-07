@@ -21,6 +21,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
 
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+  <!-- main css -->
   <link rel="stylesheet" href="./css/index.css">
 
 
@@ -72,32 +77,43 @@
   </header>
   <main>
     <section class="cyber_carousel">
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs="carousel">
-        <div class="carousel-indicators mb-4">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators mb-4">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
 
-        </div>
+        </div> -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="carousel-content d-flex w-100">
-              <div class="carousel-item-left">
-                <h1>L1</h1>
+            <div class="carousel-content d-flex">
+              <div class="animate__animated animate__fadeInLeft carousel-item-left px-3">
+
+                <div>
+                  <h3>Step into Style!</h3>
+                </div>
+                <div>
+                  <h1>Make a Statement with Your Shoes.</h1>
+                </div>
               </div>
-              <div class="carousel-item-right">
-                <h1>R1</h1>
+              <div class="animate__animated animate__fadeInRight carousel-item-right px-3">
+                <img src="https://shop.cyberlearn.vn/images/adidas-super-star-red.png" alt="" id="shoe1">
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="carousel-content d-flex w-100">
-              <div class="carousel-item-left">
-                <h1>L2</h1>
+            <div class="carousel-content d-flex">
+              <div class="animate__animated animate__fadeInLeft carousel-item-left px-3">
+                <img src="https://shop.cyberlearn.vn/images/nike-flyknit.png" alt="" id="random_shoes">
               </div>
-              <div class="carousel-item-right">
-                <h1>R2</h1>
+              <div class="animate__animated animate__fadeInRight carousel-item-right px-3">
+                <div>
+                  <h3>Elevate Your Shoe Game.</h3>
+                </div>
+                <div>
+                  <h1>Stride in Fashion Forward Footwear.</h1>
+                </div>
               </div>
             </div>
           </div>
@@ -105,12 +121,12 @@
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev">
-          <span class="fa fa-arrow-left" aria-hidden="true"></span>
+          <span class="fa-solid fa-caret-left" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next">
-          <span class="fa fa-arrow-right" aria-hidden="true"></span>
+          <span class="fa-solid fa-caret-right" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>

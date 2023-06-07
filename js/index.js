@@ -1,5 +1,7 @@
 console.log("hello world");
 
+
+
 function getAllShoes() {
   var promise = axios({
     url: "https://shop.cyberlearn.vn/api/Product",
@@ -22,7 +24,7 @@ getAllShoes();
 
 function renderShoes(shoesArr) {
   var content = "";
-  for(let i = 0; i < 6; i++){
+  for(let i = 0; i < shoesArr.length; i++){
     console.log(shoesArr[i]);
     // <img src="${shoesArr[i].image}" class="card-img-top" alt="test"></img>
     content += `
@@ -45,5 +47,6 @@ function renderShoes(shoesArr) {
   document.getElementById("products_display").innerHTML = content;
 
 }
+
 
 
