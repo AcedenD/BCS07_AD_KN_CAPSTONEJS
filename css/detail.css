@@ -1,3 +1,13 @@
+/* RESET */
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* SHOES DETAIL */
+/* Carousel */
 .carousel {
   width: 50%;
   margin: 0px auto;
@@ -9,9 +19,49 @@
   width: 100%;
   border: 2px solid #fff;
 }
-.slick-arrow {
-  background-color: #f3a4a4;
+.slick-arrow::before {
+  color: #f3a4a4;
+}
+.slick-arrow:hover::before {
+  color: #e24647;
+}
+.shoesName {
+  text-align: center;
+  font-weight: 300;
+}
+/* Detail content */
+.content {
+  margin-top: 30px;
+  border-top: #e8e8e8;
+}
+.shoes_detail .shoes_name {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+.shoes_detail .content .sharing .sharing_platforms {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+.shoes_detail .content .sharing .sharing_platforms li {
+  margin: 15px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  display: inline-block;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.shoes_detail .content .sharing .sharing_platforms li a i {
+  font-size: 25px;
+  color: #ddd;
+  text-align: center;
+}
+.shoes_detail .content .sharing .sharing_platforms li:hover {
+  background-color: #e24647;
+  text-align: center;
+}
+.shoes_detail .content .sharing .sharing_platforms li:hover a i {
+  color: #fff;
 }
