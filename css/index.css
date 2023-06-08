@@ -9,7 +9,7 @@ body {
 }
 
 hr {
-  border: 2px solid #535353;
+  border: 2px solid #003049;
   width: 80vw;
   margin: 40px auto;
   border-radius: 40%;
@@ -17,7 +17,7 @@ hr {
 
 /* Navbar css */
 .nav_sec {
-  background-color: #222;
+  background-color: #003049;
   padding: 0 20px;
 }
 
@@ -28,28 +28,28 @@ hr {
 .nav_sec .navbar-brand {
   font-size: 30px;
   font-weight: 700;
-  color: #aaa;
+  color: #eae2b7;
 }
 
 .nav_sec span {
-  color: #aaa;
+  color: #eae2b7;
 }
 
-.nav_sec .collapse {
-  border: 1px solid #e24647;
-}
+/* .nav_sec .collapse {
+  border: 1px solid #EAE2B7;
+} */
 
 .nav_sec .collapse .navbar-nav li a {
-  color: #aaa;
+  color: #eae2b7;
   transition: all 0.3s;
 }
 
 .nav_sec .collapse .navbar-nav li a:hover {
-  color: #e24647;
+  color: #d62828;
 }
 
 .nav_sec .nav_right i {
-  color: #aaa;
+  color: #eae2b7;
   font-size: 20px;
   margin: 0 10px;
   cursor: pointer;
@@ -57,11 +57,11 @@ hr {
 }
 
 .nav_sec .nav_right i:hover {
-  color: #e24647;
+  color: #d62828;
 }
 
 .navbar-toggler:focus {
-  border: 3px solid #e24647;
+  border: 3px solid #d62828;
   border-radius: 0.375rem;
   box-shadow: none;
 }
@@ -73,22 +73,21 @@ hr {
   height: 30px;
 }
 
-.navbar-brand,
-.nav_right {
-  border: 1px solid #e24647;
-}
+/* .navbar-brand, .nav_right {
+  border: 1px solid #E24647;
+} */
 
 /* carousel css*/
 .cyber_carousel {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border: 2px solid red;
-
+  /* border: 2px solid red; *
   /* background-color: #e2464675; */
 }
 
 .cyber_carousel .carousel-inner {
+  position: relative;
   height: 50vh;
   min-height: 300px;
   max-height: 500px;
@@ -96,7 +95,7 @@ hr {
 
 .cyber_carousel .carousel-item {
   height: 100%;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .cyber_carousel .carousel-indicators button {
@@ -123,7 +122,7 @@ hr {
 
 .cyber_carousel .carousel-control-next span,
 .carousel-control-prev span {
-  color: #e24647;
+  color: #d62828;
   font-size: 45px;
   font-weight: 900;
   transition: all 0.3s;
@@ -138,13 +137,13 @@ hr {
 .cyber_carousel .carousel-item .carousel-content h3 {
   font-size: 30px;
   font-weight: 200;
-  color: #272727;
+  color: #003049;
 }
 
 .cyber_carousel .carousel-item .carousel-content h1 {
   font-size: 36x;
   font-weight: 300;
-  color: #e24647;
+  color: #d62828;
 }
 
 .cyber_carousel .carousel-item .carousel-content img {
@@ -167,7 +166,7 @@ hr {
   height: 100%;
   justify-content: center;
   align-items: end;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   flex-direction: column;
   text-align: end;
 }
@@ -177,7 +176,7 @@ hr {
   width: 50%;
   height: 100%;
   justify-content: center;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   flex-direction: column;
 }
 
@@ -192,7 +191,7 @@ hr {
   margin: 20px 0;
   font-size: 40px;
   font-weight: 200;
-  color: #272727;
+  color: #003049;
   text-transform: uppercase;
 }
 
@@ -222,7 +221,7 @@ h5.card-title {
 }
 
 h5.card-title:hover {
-  color: #e24647;
+  color: #d62828;
 }
 
 p.card-text {
@@ -231,13 +230,18 @@ p.card-text {
 }
 
 h3.card-text {
-  color: #e24647;
+  color: #d62828;
   font-weight: 400;
+}
+
+.card-body h5,
+.card-body p {
+  color: #003049;
 }
 
 #cart_btn {
   padding: 18px;
-  background-color: #00bcd4;
+  background-color: #003049;
   border-radius: 50%;
   font-size: 20px;
   transition: all 0.3s;
@@ -245,16 +249,16 @@ h3.card-text {
 }
 
 #cart_btn:hover {
-  background-color: #e24647;
+  background-color: #d62828;
 }
 
 /* Footer css */
 footer {
-  background-color: #222;
+  background-color: #003049;
 }
 
 footer .footer_social a {
-  color: #aaa;
+  color: #eae2b7;
 }
 
 footer .footer_social i {
@@ -262,27 +266,31 @@ footer .footer_social i {
   height: 42px;
   line-height: 42px;
   border-radius: 50%;
-  border: 1px solid #454545;
+  border: 1px solid #eae2b7;
   transition: all 0.5s;
 }
 
 footer .footer_social a:hover i {
-  border: 1px solid #e24647;
-  color: #e24647;
+  border: 1px solid #d62828;
+  color: #d62828;
 }
 
 footer .footer_copy {
-  color: #aaa;
+  color: #eae2b7;
 }
 
 footer .footer_copy a {
   text-decoration: none;
-  color: #aaa;
+  color: #eae2b7;
   transition: all 0.5s;
 }
 
 footer .footer_copy a:hover {
-  color: #e24647;
+  color: #d62828;
+}
+
+footer hr {
+  border: 2px solid #eae2b7;
 }
 
 /* Media Queries */
