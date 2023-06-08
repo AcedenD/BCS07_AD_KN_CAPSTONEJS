@@ -130,8 +130,10 @@
           </nav>
         </div>
       </section> -->
-      <section class="shoes_detail">
-        <div class="container">
+
+      <!-- PRODUCT DETAILS -->
+      <section class="shoes_detail pb-5">
+        <div class="container pt-5">
           <div class="carousel">
             <div><img src="https://picsum.photos/300/200?random=1" /></div>
             <div><img src="https://picsum.photos/300/200?random=2" /></div>
@@ -173,11 +175,12 @@
                     <i class="fa-solid fa-pen"></i>
                     <span>Write a review</span>
                   </a>
+                  <p>
+                    100% cotton double printed dress. Black and white striped
+                    top and orange high waisted skater skirt bottom.
+                  </p>
                 </div>
-                <p>
-                  100% cotton double printed dress. Black and white striped top
-                  and orange high waisted skater skirt bottom.
-                </p>
+
                 <div class="polices">
                   <ul>
                     <!-- item 1 -->
@@ -250,18 +253,19 @@
                     ></span>
                   </div>
                   <div class="product_quantity">
+                    <span>Quantity</span>
                     <input type="number" value="1" />
                   </div>
                   <div class="btn-group">
                     <button class="add_to_cart">ADD TO CART</button>
-                    <button class="like">
+                    <button class="wishlist">
                       <i class="fa-regular fa-heart"></i>
                     </button>
                     <button class="remove">
                       <i class="fa-solid fa-retweet"></i>
                     </button>
                   </div>
-                  <div>
+                  <div class="product-availability">
                     <i class="fa-solid fa-check"></i>
                     <span> In Stock</span>
                   </div>
@@ -270,6 +274,96 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- FEATURED PRODUCTS -->
+      <section class="featured_products pb-5">
+        <section class="products_list">
+          <div class="container">
+            <div class="products">
+              <div class="products_title">
+                <h2>Featured Products</h2>
+                <p
+                  style="
+                    color: #aaaaaa;
+                    font-size: 20px;
+                    font-weight: 300;
+                    text-align: center;
+                  "
+                >
+                  Summer Collection New Modern Design
+                </p>
+              </div>
+              <div class="products_content">
+                <div
+                  class="row justify-content-center align-items-center g-4"
+                  id="products_display"
+                >
+                  <div
+                    class="col-lg-4 col-md-6 col-6 d-flex justify-content-center"
+                  >
+                    <div class="card">
+                      <a
+                        ><img
+                          src="https://shop.cyberlearn.vn/images/adidas-prophere.png"
+                          class="card-img-top"
+                          alt="test"
+                      /></a>
+                      <div class="card-body text-center">
+                        <a>
+                          <h5 class="card-title"></h5>
+                        </a>
+                        <p class="card-text"></p>
+                        <h3 class="card-text"></h3>
+                        <i class="fa fa-cart-shopping" id="cart_btn"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-4 col-md-6 col-6 d-flex justify-content-center"
+                  >
+                    <div class="card">
+                      <a
+                        ><img
+                          src="https://shop.cyberlearn.vn/images/adidas-prophere-black-white.png"
+                          class="card-img-top"
+                          alt="test"
+                      /></a>
+                      <div class="card-body text-center">
+                        <a>
+                          <h5 class="card-title"></h5>
+                        </a>
+                        <p class="card-text"></p>
+                        <h3 class="card-text"></h3>
+                        <i class="fa fa-cart-shopping" id="cart_btn"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-4 col-md-6 col-6 d-flex justify-content-center"
+                  >
+                    <div class="card">
+                      <a
+                        ><img
+                          src="https://shop.cyberlearn.vn/images/adidas-prophere-customize.png"
+                          class="card-img-top"
+                          alt="test"
+                      /></a>
+                      <div class="card-body text-center">
+                        <a>
+                          <h5 class="card-title"></h5>
+                        </a>
+                        <p class="card-text"></p>
+                        <h3 class="card-text"></h3>
+                        <i class="fa fa-cart-shopping" id="cart_btn"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
 
@@ -363,5 +457,6 @@
     </script>
     <!-- JS FILES -->
     <script src="./js/detail.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
