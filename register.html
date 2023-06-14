@@ -1,139 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <!-- FontAwesome 6.2.0 CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- css register -->
-    <link rel="stylesheet" href="./css/register.css" />
-  </head>
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
-    <main>
-      <section class="register">
-        <div class="container" id="container">
-          <!-- REGISTER -->
-          <div class="form-container sign-up-container">
-            <form action="#">
-              <h1>Create Account</h1>
-              <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-google-plus-g"></i
-                ></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-              <span>or use your email for registration</span>
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" />
-              <select>
-                <option>Gender</option>
-                <option>Nam</option>
-                <option>Nữ</option>
-                <option>Other</option>
-              </select>
-              <input class="mb-4" type="text" placeholder="Phone Number" />
-              <button>Sign Up</button>
-            </form>
-          </div>
-          <!-- LOGIN -->
-          <div class="form-container sign-in-container">
-            <form action="#">
-              <h1>Sign in</h1>
-              <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-google-plus-g"></i
-                ></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-              <span>or use your account</span>
-              <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Password" />
-              <a href="#">Forgot your password?</a>
-              <button>Sign In</button>
-            </form>
-          </div>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css register -->
+  <link rel="stylesheet" href="./css/register.css" />
+</head>
 
-          <!-- OVERLAY -->
-          <div class="overlay-container">
-            <div class="overlay">
-              <div class="overlay-panel overlay-left">
-                <h1>Hello, Friend!</h1>
-                <p>Enter your personal details and start journey with us</p>
-                <p>Already Have Account?</p>
-                <button class="ghost" id="signIn">Sign In</button>
+<body>
+  <header>
+    <!-- place navbar here -->
+    <!-- <section class="nav_sec py-lg-2 py-0">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
+          <div class="container-fluid d-flex">
+            <a class="navbar-brand col-lg-2 col-md-12 col-sm-12 col-12 d-flex justify-content-center"
+              href="./index.html">CyberShoes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa fa-bars d-flex justify-content-center align-content-center"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-end col-lg-8 col-md-12 col-12"
+              id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav_right d-flex gap-1 col-lg-2 col-md-12 col-12 justify-content-lg-end my-2 py-1">
+              <div id="cart_block">
+                <a href=""><i class="fa fa-cart-shopping"></i></a>
               </div>
-              <div class="overlay-panel overlay-right">
-                <h1>Welcome Back!</h1>
-                <p>
-                  To keep connected with us please login with your personal info
-                </p>
-                <p>Or To Register New Account</p>
-                <button class="ghost" id="signUp">Sign Up</button>
+              <div class="user_block">
+                <a href="./register.html"><i class="fa fa-user"></i></a>
               </div>
             </div>
           </div>
+        </nav>
+      </div>
+    </section> -->
+  </header>
+  <main>
+    <section class="register">
+      <div class="container" id="container">
+        <!-- REGISTER -->
+        <div class="form-container sign-up-container">
+          <form action="#" id="signUpForm">
+            <h1>Create Account</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" id="txtName" />
+            <input type="email" placeholder="Email" id="txtEmail" />
+            <input type="password" placeholder="Password" id="txtPass" />
+            <select id="genderSel">
+              <option value="">Gender</option>
+              <option value="true">Nam</option>
+              <option value="false">Nữ</option>
+            </select>
+            <input class="mb-4" type="text" placeholder="Phone Number" id="phoneNumber" />
+            <button type="button" id="signUpReg">Sign Up</button>
+          </form>
         </div>
-      </section>
-    </main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
+        <!-- LOGIN -->
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button>Sign In</button>
+          </form>
+        </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
+        <!-- OVERLAY -->
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <p>Already Have Account?</p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <p>Or To Register New Account</p>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-lg-3 py-md-2 py-1">
+    <!-- place footer here -->
+    <!-- <div class="container-lg text-white text-center">
+      <div class="footer_social py-4">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <hr />
+      <div class="footer_copy">
+        <p>
+          © 2023 CyberShoes. All rights reserved | Designed by
+          <a href="https://cybersoft.edu.vn/bootcamp-lap-trinh-front-end-tu-zero-co-viec-lam/" target="
+                          ">Cybersoft</a>
+        </p>
+      </div>
+    </div> -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
 
-    <!-- Function -->
-    <script>
-      const signUpButton = document.getElementById("signUp");
-      const signInButton = document.getElementById("signIn");
-      const container = document.getElementById("container");
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
 
-      signUpButton.addEventListener("click", () => {
-        container.classList.add("right-panel-active");
-      });
+  <!-- Function -->
+  <script>
+    const signUpButton = document.getElementById("signUp");
+    const signInButton = document.getElementById("signIn");
+    const container = document.getElementById("container");
 
-      signInButton.addEventListener("click", () => {
-        container.classList.remove("right-panel-active");
-      });
-    </script>
-  </body>
+    signUpButton.addEventListener("click", () => {
+      container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener("click", () => {
+      container.classList.remove("right-panel-active");
+    });
+  </script>
+
+  // axios
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+    integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./js/register.js"></script>
+</body>
+
 </html>
