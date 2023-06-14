@@ -84,6 +84,7 @@ hr {
   overflow: hidden;
   /* border: 2px solid red; *
   /* background-color: #e2464675; */
+  background-color: #eae2b786;
 }
 
 .cyber_carousel .carousel-inner {
@@ -136,14 +137,15 @@ hr {
 
 .cyber_carousel .carousel-item .carousel-content h3 {
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 400;
   color: #003049;
 }
 
 .cyber_carousel .carousel-item .carousel-content h1 {
   font-size: 36x;
-  font-weight: 300;
-  color: #d62828;
+  font-weight: 500;
+  color: #D62828;
+  text-shadow: 3px 3px #aaa;
 }
 
 .cyber_carousel .carousel-item .carousel-content img {
@@ -152,8 +154,9 @@ hr {
   object-fit: contain;
   border-radius: 10px;
   margin: 1rem 0;
+  filter: drop-shadow(3px 3px 10px #000);
   /* border: 2px solid #E24647; */
-  /* transition: all 0.3s; */
+  transition: all 0.3s;
 }
 
 .cyber_carousel .carousel-item .carousel-content img#shoe1 {
@@ -205,11 +208,17 @@ hr {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-img {
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   cursor: pointer;
+}
+
+.card a img{
+  background-color: #eae2b748;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  
 }
 
 h5.card-title {
