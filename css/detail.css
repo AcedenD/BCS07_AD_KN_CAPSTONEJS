@@ -7,23 +7,26 @@ a {
   text-decoration: none;
 }
 /* SHOES DETAIL */
-/* Carousel */
-.carousel {
-  width: 50%;
-  margin: 0px auto;
+
+.img_container img {
+  padding: 0 100px;
+  border-radius: 15px;
+  background-color: #f9f7eb;
+  /* filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3)); */
+  /* box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12); */
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
 }
-.slick-slide {
-  margin: 10px;
+.img_container i {
+  color: #5c7d9f;
+  padding: 30px;
+  font-size: 45px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.slick-slide img {
-  width: 100%;
-  border: 2px solid #fff;
-}
-.slick-arrow::before {
-  color: #f3a4a4;
-}
-.slick-arrow:hover::before {
-  color: #e24647;
+.img_container i:hover {
+  color: #003049;
 }
 .shoesName {
   text-align: center;
