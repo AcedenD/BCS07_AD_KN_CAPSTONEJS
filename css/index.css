@@ -215,6 +215,10 @@ hr {
   cursor: pointer;
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .card a img{
   background-color: #eae2b748;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
