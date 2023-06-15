@@ -336,6 +336,7 @@ footer hr {
   .cyber_carousel .carousel-item .carousel-content h1 {
     font-size: 30px;
   }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -373,12 +374,19 @@ footer hr {
     /* background-color: #E24647; */
     width: 5%;
   }
+
+  
 }
 
-@media screen and (min-width: 992px) and (max-width: 1400px) {
+@media screen and (min-width: 992px) and (max-width: 1980px) {
   .cyber_carousel .carousel-control-next,
   .carousel-control-prev {
     /* background-color: #E24647; */
     width: 7%;
   }
+
+  .row .card {
+    width: 18rem; height: 30rem;
+  }
+
 }

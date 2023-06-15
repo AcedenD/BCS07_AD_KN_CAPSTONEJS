@@ -28,8 +28,8 @@ function renderShoes(shoesArr) {
   var content = "";
   for (let i = 0; i < shoesArr.length; i++) {
     content += `
-    <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center">
-    <div class="card rounded-4" style="width: 18rem; height: 30rem;">
+    <div class="col-lg-4 col-md-6 col-6 d-flex justify-content-center">
+    <div class="card rounded-4">
       <a href="./detail.html?productid=${shoesArr[i].id}" class="m-3" onclick="(function() {
         console.log('id from img: ${shoesArr[i].id}') })()"><img src="${shoesArr[i].image}" class="card-img-top rounded-4" alt="test"></a>
       <div class="card-body text-center">
