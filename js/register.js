@@ -1,7 +1,7 @@
 console.log("hello world");
 
 function getSignUpInfo() {
-  console.log(getInput())
+  // console.log(getInput())
   if (getInput()) {
     var arrInput = document.querySelectorAll("#signUpForm input, #signUpForm select");
 
